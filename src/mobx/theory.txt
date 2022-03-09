@@ -1,0 +1,35 @@
+Concepts in mobx
+initial stage is to install mobx and mobx-react
+
+CORE CONCEPTS :
+--> observer
+--> observable
+--> actions
+--> computed
+
+observable helps us create state in other words state management is done via observable(is an object)..
+
+const state =observable({
+    state:0     
+})
+actions are functions that modify state...actions yield better performance
+
+const state=observable({
+    state:0,
+    increment: action(() => {
+        state.count += 1    
+    }),
+    decrement : action(() =>{
+        state.count -= 1
+    })
+})
+
+observer : we would need to make every component as observers
+
+const Counter = observer() or export default observer(Counter)
+
+additional method configure which allows only action to modify state
+
+configure({enforceActions:true  })
+
+computed property : if you want to do modification in data before accessing u can use computed property.    

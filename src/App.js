@@ -3,9 +3,8 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 // import CakeContainer from "./components/CakeContainer";
 // import IceCreamContainer from "./components/IceCreamContainer";
-import NewCakeContainer from "./components/NewContainer";
-import NewIceCreamContainer from "./components/NewIceCreamContainer";
-// import UserContainer from "./components/UserContainer";
+// import NewCakeContainer from "./components/NewContainer";
+// import NewIceCreamContainer from "./components/NewIceCreamContainer";
 
 function App() {
   return (
@@ -14,9 +13,8 @@ function App() {
         <h1> Welcome to My Bakery</h1>
         {/* <CakeContainer />
         <IceCreamContainer /> */}
-          <NewCakeContainer />
-          <NewIceCreamContainer />
-        {/* <UserContainer /> */}
+        {/* <NewCakeContainer />
+          <NewIceCreamContainer /> */}
       </div>
     </Provider>
   );
